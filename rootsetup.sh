@@ -1,27 +1,14 @@
-.  /tmp/esxi_vagrant_centos8/config/install_env.sh
-echo "installing os packages"
-echo "+++++++++++++++++++++++"
-sudo sh /tmp/esxi_vagrant_centos8/scripts/install_os_packages.sh
-systemctl start nfs-server.service
-systemctl enable nfs-server.service
-systemctl status nfs-server.service
+. /tmp/ZFS_BUILD/install_env.sh
+sudo sh /tmp/ZFS_BUILD/centos7_os_build.sh
 
-echo "mounting the nfs share"
-echo "+++++++++++++++++++++++"
+sudo sh /tmp/ZFS_BUILD/zfs_server_install.sh
 
-mkdir -p /nfsshare
-mount -t nfs 192.168.0.10:/nfsshare /nfsshare
-df -kh
+sudo sh /tmp/ZFS_BUILD/create_zfs_storage_pool.sh
 
-echo "192.168.0.10:/nfsshare /nfsshare  nfs 0 0"  >> /etc/fstab
+sudo sh /tmp/ZFS_BUILD/creat_zfs_dataset.sh
 
-echo "setting the hostnames"
-echo "+++++++++++++++++++++++"
-sh /tmp/esxi_vagrant_centos8/scripts/configure_hostname.sh
+sudo sh /tmp/ZFS_BUILD/creat_zfs_volume.sh
 
-echo "=========================================================="
-echo "server build  ${HOSTNAME}.${DOMAIN_NAME} is completed"
-echo "=========================================================="
-
+sudo sh /tmp/ZFS_BUILD/install_iscsi_server.sh
 
 
