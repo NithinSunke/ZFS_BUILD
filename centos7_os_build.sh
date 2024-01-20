@@ -4,7 +4,7 @@ cd /tmp
 git clone https://github.com/NithinSunke/vsphere_linux_os_build.git
 cd /tmp
 ls
-cat  /tmp/tmp/vsphere_linux_os_build/config/install_env.sh  > /tmp/ZFS_BUILD/install_env.sh
+cat  /tmp/vsphere_linux_os_build/config/install_env.sh  > /tmp/ZFS_BUILD/install_env.sh
 cat /tmp/ZFS_BUILD/install_variables.sh >> /tmp/ZFS_BUILD/install_env.sh
 
 cd /tmp
