@@ -1,5 +1,5 @@
 #!/bin/bash
-
+. /tmp/ZFS_BUILD/install_env.sh
 # Set your pool name, dataset name, volume name, and size
 
   # Adjust the size as needed, e.g., 50G, 100G, etc.

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+. /tmp/ZFS_BUILD/install_env.sh
 # Create the ZFS dataset
 sudo zfs create $POOL_NAME/$DATASET_NAME
 
