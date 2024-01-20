@@ -1,5 +1,5 @@
 #!/bin/bash
-
+. /tmp/ZFS_BUILD/install_env.sh
 # Check if ZFS module is loaded
 if ! lsmod | grep -q zfs; then
     echo "ZFS module not loaded. Loading the module..."
