@@ -7,9 +7,6 @@ ls
 cat  /tmp/vsphere_linux_os_build/config/install_env.sh  > /tmp/ZFS_BUILD/install_env.sh
 cat /tmp/ZFS_BUILD/install_variables.sh >> /tmp/ZFS_BUILD/install_env.sh
 
-cd /tmp
-rm -rf /tmp/vsphere_linux_os_build
-
 .  /tmp/ZFS_BUILD/install_env.sh
 
 echo "installing os packages"
