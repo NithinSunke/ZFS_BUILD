@@ -10,4 +10,6 @@ sudo sh /tmp/ZFS_BUILD/creat_zfs_volume.sh
 
 sudo sh /tmp/ZFS_BUILD/install_iscsi_server.sh
 
+sudo sh /tmp/ZFS_BUILD/create_iscsi_lun.sh
+
 
