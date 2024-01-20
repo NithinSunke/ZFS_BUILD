@@ -4,11 +4,11 @@ cd /tmp
 git clone https://github.com/NithinSunke/vsphere_linux_os_build.git
 cd /tmp
 ls
-cat  /tmp/esxi_vagrant_centos8/config/install_env.sh  > /tmp/ZFS_BUILD/install_env.sh
+cat  /tmp/tmp/vsphere_linux_os_build/config/install_env.sh  > /tmp/ZFS_BUILD/install_env.sh
 cat /tmp/ZFS_BUILD/install_variables.sh >> /tmp/ZFS_BUILD/install_env.sh
 
 cd /tmp
-rm -rf /tmp/esxi_vagrant_centos8
+rm -rf /tmp/vsphere_linux_os_build
 
 .  /tmp/ZFS_BUILD/install_env.sh
 
