@@ -13,7 +13,7 @@ targetcli <<EOF
 EOF
 
 # Create iSCSI target
-
+target_name="iqn.${HOSTNAME}:sddoc01"
 targetcli <<EOF
 /iscsi create $target_name
 EOF
