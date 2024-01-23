@@ -1,4 +1,4 @@
-.  /tmp/esxi_vagrant_centos8/config/install_env.sh
+.  /tmp/ZFS_BUILD/install_variables.sh
 
 echo "******************************************************************************"
 echo "Set Hostname." `date`
