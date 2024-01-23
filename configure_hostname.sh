@@ -1,4 +1,4 @@
-.  /tmp/ZFS_BUILD/install_env.shh
+.  /tmp/ZFS_BUILD/install_env.sh
 
 echo "******************************************************************************"
 echo "Set Hostname." `date`
