@@ -17,7 +17,7 @@ sudo systemctl start target
 # Enable targetcli service to start on boot
 sudo systemctl enable target
 
-echo "InitiatorName=iqn.1994-05.com.redhat:$HOSTNAME" > /etc/iscsi/initiatorname.iscsi
+echo "InitiatorName=iqn.1994-05.com.scs:$HOSTNAME" > /etc/iscsi/initiatorname.iscsi
 
 echo "targetcli service started and enabled on boot"
 
